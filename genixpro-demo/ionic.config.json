@@ -1,0 +1,7 @@
+{
+  "name": "genixpro-demo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

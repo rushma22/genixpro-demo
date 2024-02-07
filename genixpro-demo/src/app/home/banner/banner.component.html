@@ -1,0 +1,29 @@
+<div *ngIf="slides.length > 0" class="main">
+  <swiper-container
+    [modules]="swiperModules"
+    [slidesPerView]="1"
+    [spaceBetween]="20"
+    [centeredSlide]="true"
+    [pagination]="{ clickable: true, dynamicBullets: true }"
+  >
+    <swiper-slide *ngFor="let slide of slides" (click)="change(slide)">
+      <div class="img-section">
+        <img [src]="slide?.banner" />
+        <div class="text-section">
+          <ion-text class="top-text ion-text-center"> 
+            {{ slide?.topText }}
+          </ion-text> <br />
+          <ion-text class="bottom-text ion-text-center" color="secondary">
+           <p> {{ slide?.bottomText }}</p>
+          </ion-text>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <div class="button">
+    <ion-button>
+      Get Started
+    </ion-button>
+  </div>
+
+</div>
