@@ -1,0 +1,68 @@
+<ion-content [fullscreen]="true">
+  <div class="green">
+    <img src="assets/images/logo1.png" alt="" />
+  </div>
+  <div class="white">
+    <div class="logo">
+      <img src="assets/images/Logo.png" alt="" />
+    </div>
+
+    <div class="welcome-text">
+      <ion-label>Welcome <span>back!</span></ion-label>
+      <br />
+      <ion-note> Log in to your personal health vault. </ion-note>
+    </div>
+
+    <div class="email">
+      <ion-label> Email ID or 21 CH ID </ion-label>
+      <ion-input fill="outline" placeholder="Enter your Email or 21 CH ID">
+      </ion-input>
+    </div>
+    <div class="email">
+      <ion-label> Email ID or 21 CH ID </ion-label>
+      <ion-input
+        fill="outline"
+        [type]="passwordType"
+        placeholder="Enter your password"
+      >
+        <ion-button
+          fill="clear"
+          slot="end"
+          aria-label="Show/hide"
+          (click)="togglePassword()"
+        >
+          <ion-icon
+            slot="icon-only"
+            [name]="eyeName"
+            aria-hidden="true"
+          ></ion-icon>
+        </ion-button>
+      </ion-input>
+      <div class="test1">
+        <div>
+          <ion-checkbox labelPlacement="end">
+            <ion-note> Remember Me</ion-note></ion-checkbox>
+        </div>
+        <div>
+          <ion-label color="primary"
+            ><ion-text>Forgot Password?</ion-text></ion-label
+          >
+        </div>
+      </div>
+
+      <div class="test2">
+        <div>
+          <ion-note>
+            By tapping on Log in you agree to our <span> Privacy Policy</span> & <span>Terms of Service</span>
+          </ion-note>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="test3">
+    <ion-button> Log In</ion-button>
+    <div class="register">
+      <ion-text>Don’t have an account? <span>Register</span> </ion-text>
+    </div>
+  </div>
+</ion-content>
