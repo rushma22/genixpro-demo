@@ -1,0 +1,82 @@
+<ion-content [fullscreen]="true">
+  <div class="green">
+    <ion-item>
+      <ion-buttons slot="start" >
+        <ion-back-button defaultHref="/login"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Account Registration</ion-title>
+    </ion-item>
+  </div>
+  <div class="white">
+    <div class="begin">
+      <ion-text> Before we <span>begin!</span> </ion-text>
+    </div>
+    <ion-note>Let’s register your account.</ion-note>
+
+    <div class="email">
+      <ion-label>First Name<span>*</span></ion-label>
+      <ion-input fill="outline" placeholder="First Name">
+      </ion-input>
+    </div>
+    <div class="email">
+      <ion-label>Last Name<span>*</span></ion-label>
+      <ion-input fill="outline" placeholder="Last Name">
+      </ion-input>
+    </div>
+    <div class="email">
+      <ion-label>Gender<span>*</span></ion-label>
+      <ion-select label="Select" fill="outline">
+        <ion-select-option value="apple">Male</ion-select-option>
+        <ion-select-option value="banana">Female</ion-select-option>
+  
+      </ion-select>
+    </div>
+    <div class="email">
+      <ion-label>Date of Birth (DOB)<span>*</span></ion-label>
+      <ion-item fill="outline">
+        <ion-label>
+          <ion-note>Select DOB</ion-note>
+        </ion-label>
+        <ion-button slot="end" fill="clear">
+          <ion-icon slot="icon-only" name="calendar-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </div>  
+    <div class="email">
+      <ion-label>Email ID<span>*</span></ion-label>
+      <ion-input fill="outline" placeholder="Email ID">
+      </ion-input>
+      <ion-note>A unique email ID is required.</ion-note>
+    </div>
+    <div class="email">
+      <ion-label>Mobile Number<span>*</span></ion-label>
+      <ion-input fill="outline" placeholder="Mobile Number">
+      </ion-input>
+    </div>
+    <div class="email">
+      <ion-label>Country<span>*</span></ion-label>
+          <ion-select fill="outline" aria-label="Country" interface="action-sheet" placeholder="Select Country">
+            <ion-select-option value="apples">Apples</ion-select-option>
+            <ion-select-option value="oranges">Oranges</ion-select-option>
+            <ion-select-option value="bananas">Bananas</ion-select-option>
+          </ion-select>
+    </div>
+    <div class="email">
+      <ion-label>Organization Name</ion-label>
+      <ion-input fill="outline" placeholder="Organization Name">
+      </ion-input>
+      <ion-note>
+        *Indicates mandatory fields.
+      </ion-note>
+    </div>
+
+    <ion-button expand="block" class="ion-margin-vertical submit">Submit</ion-button>
+  <div class="login" >
+    <ion-text class="ion-text-center">Already have an account? <span routerLink="/login">Log in</span></ion-text>
+  </div>
+
+  </div>
+
+
+  
+</ion-content>
